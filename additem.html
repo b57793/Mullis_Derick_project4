@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- Derick Mullis Visual Framework_1306 Project 1 -->
+
+<html>
+	<head>
+		<title>The One and Only SK!</title>
+		<meta charset="utf-8" / >
+		<meta name="description" content="My 1st HTML 5 CRUD" />
+		<meta name="keywords" content="html5, mobile development, project 1, adventurer's stash keeper" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+	<H1>Stash Keeper</h1>
+	<form action="#" method="post" id="itemForm">
+		<fieldset>
+			<legend>Log an Item into the Stash</legend>
+				<ul id="error"></ul>
+				<ul>
+					<li id="archetypeSelect"><label for="archetypeSelect">Choose Item Archetype:</label><br /></li>
+				</ul>
+				<ul>
+					<li><label for="itemName">Item Name:</label><input type id="itemName" /></li>
+				</ul>
+				<ul>
+					<li>Type:
+						<ul>
+							<li><input type="radio" value="weapon" id="typeWeapon" name="type"/><label for="typeWeapon">Weapon</label></li>
+							<li><input type="radio" value="armor"  id="typeArmor" name="type"/><label for="typeArmor">Armor</label></li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>Classification:
+					<ul>
+						<select id="classification">
+  							<option value="select">Please Select</option>
+  							<option value="light armor">Light Armor</option>
+							<option value="medium armor">Medium Armor</option>
+							<option value="heavy armor">Heavy Armor</option>
+							<option value="1 handed">1 Handed</option>
+							<option value="2 handed">2 Handed</option>
+							<option value="ranged">Ranged</option>
+							<option value="staff">Staff</option>
+						</select>
+					</ul>
+					</li>
+				</ul>				
+				<ul>
+					<li>Quality:
+						<ul>
+							<li><input name="quality" type="checkbox" value="common" id="qualityCommon" /><label for="qualityCommon">Common</label></li>
+							<li><input name="quality" type="checkbox" value="magical" id="qualityMagical" /><label for="qualityMagical">Magical</label></li>
+							<li><input name="quality" type="checkbox" value="legendary" id="qualityLegendary" /><label for="qualityLegendary">Legendary</label></li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li><label for="sellRange">Sell Value:</label><input type="range" id="sellRange" min="1" max="500"></li>
+				</ul>
+				<ul>
+					<li><label for="stashDate">Date Stashed:</label><input type="date" id="stashDate"></li>
+				</ul>
+				<ul>
+					<li><label for="dropped">Details:</label><textarea id="dropped" rows="4" cols="30"></textarea>
+				</ul>
+		</fieldset>	
+			<input type="button" id="submit" value="Stash it!" />
+	</form>	
+	<footer>
+		<p><a href="#" id="clearData">Clear Stored Items</a>&nbsp;&nbsp;&nbsp;<a href="#" id="displayData">Display Items</a><a href="additem.html" id="stashMore" style="display:none">Add More to Stash</a></p>
+	</footer>
+	<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

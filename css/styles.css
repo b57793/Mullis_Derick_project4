@@ -1,0 +1,63 @@
+<!-- Derick Mullis Visual Framework_1306 Project 1 -->
+
+a:link {color:#4B9ED1;}
+a:visited {color:#9738C7;}
+a:active {color:#FFF;}
+
+h1 {
+	font-family:Helvetica, Arial;
+	font-size:2em;
+	font-style:bold;
+	color:#C20606;
+	text-align:center;
+	border-bottom:solid;
+	border-width:2px;
+	border-color:white;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+h2 {
+	text-align:center;
+	color:white;
+	text-transform:uppercase;
+}
+
+body {
+	font-family:Helvetica, Arial;
+	margin-right:10px;
+	margin-left:10px;
+	padding-left,right:5px;
+	background-color:black;
+	color:white;
+}
+
+p {
+	text-align:center;
+}
+
+ul {
+	color:#D4CDCD
+}
+
+legend {
+	color:#D4CDCD
+}
+
+form {
+	padding:5px
+}
+
+#submit {
+	float:right;
+	margin-right:10px;
+	margin-top:5px;
+	padding:5px;
+	width:80px;
+	height:20px;
+}
+
+footer {
+	margin-top:45px;
+	word-spacing:-.1em;
+}
