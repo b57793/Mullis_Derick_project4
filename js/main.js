@@ -50,7 +50,8 @@ function saveData(key){
 
 function pullData () {
 	if(localStorage.length === 0){
-		alert("There are currently no items in your stash");
+		alert("There are currently no items in your stash, so some items have been loaded for you.");
+		fillData ();
 	}
 	toggle("on");
 	var displayDiv = document.createElement("div");
@@ -68,6 +69,7 @@ function pullData () {
 		var listObject = JSON.parse(storageValue);
 		var createSubList = document.createElement("ul");
 		createLi.appendChild(createSubList);
+		pullImage(listObject.archetype[1], createSubList);		
 		for(var n in listObject){
 			var createSubLi = document.createElement("li");
 			createSubList.appendChild(createSubLi);
@@ -76,6 +78,23 @@ function pullData () {
 			createSubList.appendChild(linkLi);
 		}
 		updateItemLink(localStorage.key(i), linkLi);  //create edit and delete buttons link for each item in local storage
+	}
+}
+
+//This will pull the image and pass it into the pullData function
+function pullImage(archetypeName, createSubList) { // These arguments are pulled in from line 72 of the pullData function
+	var imgLi = document.createElement("li");
+	createSubList.appendChild(imgLi);
+	var newImage = document.createElement("img");
+	var	setSource = newImage.setAttribute("src", "img/"+ archetypeName + ".png");
+	imgLi.appendChild(newImage);
+}
+
+//to pull the JSON data into the fillData function
+function fillData (){
+	for(var n in jsonData) {
+	var storeNumber = Math.floor(Math.random()*100000001);	
+	localStorage.setItem(storeNumber, JSON.stringify(jsonData[n]));
 	}
 }
 

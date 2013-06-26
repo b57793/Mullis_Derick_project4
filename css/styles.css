@@ -1,7 +1,7 @@
 <!-- Derick Mullis Visual Framework_1306 Project 1 -->
 
 a:link {color:#4B9ED1;}
-a:visited {color:#9738C7;}
+a:visited {color:#69268B;}
 a:active {color:#FFF;}
 
 h1 {
@@ -28,16 +28,22 @@ body {
 	margin-right:10px;
 	margin-left:10px;
 	padding-left,right:5px;
+	background-image:url('http://i44.tinypic.com/2i06gz4.png');
+	background-repeat:no-repeat;
+	background-position:center;
 	background-color:black;
 	color:white;
 }
+
+
 
 p {
 	text-align:center;
 }
 
 ul {
-	color:#D4CDCD
+	color:#D4CDCD;
+	list-style-type: none;
 }
 
 legend {
